@@ -65,8 +65,8 @@ sendMotorCmds(s, CMD_right,CMD_left,i_right,i_left);
 |  `s`            |            -                         | Jest to uchwyt do obiektu typu serialport           |
 |  `CMD_right`    |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan prawego silnika  |
 |  `CMD_left`     |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan lewego silnika   |
-|  `i_right`      |  -1.5 ÷ 1.5                          | Wartość prądu dla prawego silnika                   |
-|  `i_left`       |  -1.5 ÷ 1.5                          | Wartość prądu dla lewego silnika                    |
+|  `i_right`      |  -1.5 ÷ 1.5                          | Wartość prądu dla prawego silnika (A)               |
+|  `i_left`       |  -1.5 ÷ 1.5                          | Wartość prądu dla lewego silnika (A)                |
 
 Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
 ```matlab
