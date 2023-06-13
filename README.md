@@ -3,8 +3,7 @@
 
 
 Projekt zakładał wykonanie układu sterującego silnikami prądu stałego oraz układu pobierającego dane ze sensorów. Do realizacji założeń projektowych wybrano układ typu SOC - Esp32. Do łatwego implementowania algorytmów sterowania wykorzystano środowisko Matlab, które komunikuje się z Esp32 poprzez magistralę RS-232. 
-## Authors
-
+## Autorzy
 - [@tomal74](https://www.github.com/tomal74)
 - [@Paweu00](https://www.github.com/Paweu00)
 
