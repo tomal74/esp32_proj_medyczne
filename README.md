@@ -46,13 +46,13 @@ Funkcja `sendMotorCmds` pozwala na wysyłanie odpowiedniej ramki do Esp32.
 ```matlab
 sendMotorCmds(s, CMD_right,CMD_left,i_right,i_left);
 ```
-| Argument  | Warość     | Opis                |
-| :-------- | :-------   | :------------------------- |
-|  `s`      |            |  |
+| Argument        | Warość                               | Opis                                                |
+| :-------- ------| :-------                             | :-------------------------------------------------- |
+|  `s`            |            -                         | Jest to uchwyt do obiektu typu serialport           |
 |  `CMD_right`    |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan prawego silnika  |
-|  `CMD_left`    |            0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan lewego silnika  |
-|  `i_right`    |    -1.5 ÷ 1.5        | Wartość prądu dla prawego silnika |
-|  `i_left`    |     -1.5 ÷ 1.5       | Wartość prądu dla lewego silnika |
+|  `CMD_left`     |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan lewego silnika   |
+|  `i_right`      |  -1.5 ÷ 1.5                          | Wartość prądu dla prawego silnika                   |
+|  `i_left`       |  -1.5 ÷ 1.5                          | Wartość prądu dla lewego silnika                    |
 
 Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
 ```matlab
