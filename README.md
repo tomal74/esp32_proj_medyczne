@@ -8,7 +8,8 @@ Projekt zakładał wykonanie układu sterującego silnikami prądu stałego oraz
 ### Enkodery
 Enkodery łączone są pięciopinowym gniazdem z opisem R (enkoder dla prawego silnika) oraz L (enkoder dla lewego silnika). Gniazdo powinno zostać wpięte napisem ku górze platformy (rysunek poniżej).
 
-![Podłączenie enkoderów](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/RS-232.jpeg/360px-RS-232.jpeg)
+![Podłączenie enkoderów] 
+![Screenshot](images/enc_con.png)
 
 ### Czujnik Siły
 W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia poniżej. 
@@ -46,8 +47,8 @@ sendMotorCmds(s, CMD_right,CMD_left,i_right,i_left);
 |  `s`      |            |  |
 |  `CMD_right`    |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan prawego silnika  |
 |  `CMD_left`    |            0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan lewego silnika  |
-|  `i_right`    |    -1.5 - 1.5        | Wartość prądu dla prawego silnika |
-|  `i_right`    |     -1.5 - 1.5       | Wartość prądu dla lewego silnika |
+|  `i_right`    |    -1.5 ÷ 1.5        | Wartość prądu dla prawego silnika |
+|  `i_left`    |     -1.5 ÷ 1.5       | Wartość prądu dla lewego silnika |
 
 Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
 ```matlab
@@ -55,4 +56,4 @@ Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
 ```
 Gdzie `l_m_ss` i `r_m_ss` są odpowiednio wektorami pozycji, prędkości oraz przyspieszenia dla lewego/prawego silnika.  
 `arm_Pos` jest pozycją ramienia urządzenia.
-`arm_Tens` jest wartością z czujnika siły ().
+`arm_Tens` jest wartością z czujnika siły.
