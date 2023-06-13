@@ -60,7 +60,7 @@ Storage steerSettings;
 
 
 //Accesspoint name and password:
-const char* ssid_ap = "Konieczka & Nowak Man";
+const char* ssid_ap = "Konieczka & Nowak VSA";
 const char* password_ap = "";
 
 //static IP

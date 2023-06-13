@@ -4,7 +4,7 @@
 #include <WebServer.h>
 
 
-WebServer server(80);
+//WebServer server(80);
 
 void TakeEncoData(void)
 {
@@ -80,7 +80,7 @@ void Core2code( void * pvParameters )
     if(OTA_Activ==true) 
     {
       noInterrupts();
-      server.handleClient();
+      //server.handleClient();
     }
 
     Serial2_Traffic();

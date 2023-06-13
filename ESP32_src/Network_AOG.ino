@@ -1,50 +1,13 @@
 #include <stdarg.h>
 #include <Update.h>
-#include "WiFiGeneric.h"
+#include "WiFi.h"
+#include "SPIFFS.h"
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
 
+
+AsyncWebServer server(80);
  
-
-const char* loginIndex = 
- "<form name='loginForm'>"
-    "<table width='20%' bgcolor='A09F9F' align='center'>"
-        "<tr>"
-            "<td colspan=2>"
-                "<center><font size=4><b>agroOSA login</b></font></center>"
-            "</td>"
-            "<br>"
-            "<br>"
-        "</tr>"
-        "<td>Username:</td>"
-        "<td><input type='text' size=25 name='userid'><br></td>"
-        "</tr>"
-        "<br>"
-        "<br>"
-        "<tr>"
-            "<td>Password:</td>"
-            "<td><input type='Password' size=25 name='pwd'><br></td>"
-            "<br>"
-            "<br>"
-        "</tr>"
-        "<tr>"
-            "<td><input type='submit' onclick='check(this.form)' value='Login'></td>"
-        "</tr>"
-    "</table>"
-"</form>"
-"<script>"
-    "function check(form)"
-    "{"
-    "if(form.userid.value=='agroOSA' && form.pwd.value=='ja tu prowadze!')"
-    "{"
-    "window.open('/serverIndex')"
-    "}"
-    "else"
-    "{"
-    " alert('Error Password or Username')/*displays error message*/"
-    "}"
-    "}"
-"</script>";
-
-
 void Send_DEBUG_Data()
 {
    
@@ -52,8 +15,10 @@ void Send_DEBUG_Data()
 
 void WiFi_Start_AP() 
 {
-uint64_t chipid;
-unsigned long timeout;
+  uint64_t chipid;
+  unsigned long timeout;
+  
+  SPIFFS.begin();
 
   chipid = ESP.getEfuseMac();
   
@@ -85,10 +50,20 @@ unsigned long timeout;
   Serial.print("TX power:");
   Serial.println(a);
 
+/*
   server.on("/", HTTP_GET, []() {
     server.sendHeader("Connection", "close");
     server.send(200, "text/html", loginIndex);
   });
+  */
+
+  //tutaj odbywa sie obsługa zapytań
+  server.on("/", HTTP_GET, [](AsyncWebServerRequest *request){ //na otrzymane od klienta zapytania pod adresem "/" typu GET, 
+    request->send(SPIFFS, "/index.html", "text/html");         //odpowiedz plikiem index.html z SPIFFS (można to zmienić na kartę SD) 
+                                                               //zawierającym naszą stronę będącą plikem tekstowym HTML
+  });
+  
+// server.serveStatic("/", SPIFFS, "/").setDefaultFile("index.htm");
 
   server.begin();
   
