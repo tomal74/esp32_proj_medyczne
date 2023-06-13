@@ -47,7 +47,7 @@ Funkcja `sendMotorCmds` pozwala na wysyłanie odpowiedniej ramki do Esp32.
 sendMotorCmds(s, CMD_right,CMD_left,i_right,i_left);
 ```
 | Argument        | Warość                               | Opis                                                |
-| :-------- ------| :-------                             | :-------------------------------------------------- |
+| :-------------- | :----------------------------------  | :-------------------------------------------------- |
 |  `s`            |            -                         | Jest to uchwyt do obiektu typu serialport           |
 |  `CMD_right`    |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan prawego silnika  |
 |  `CMD_left`     |  0 - STOP, 1 - BRAKE, 2 - RUN        | Komenda ustalająca odpowiedni stan lewego silnika   |
