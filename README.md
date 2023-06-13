@@ -26,7 +26,7 @@ W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia
 
 Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. Należy zbudować układ przetwarzający dane z czujnika na napięcie 0-5V. Układ ten nie został zrealizowany przez autorów.
 ### Serial Port 1
-Główna komunikacja odbywa się po pierwszym Serial Porcie. Połączenie między komputerem z oprogramowaniem, a Esp32 odbywa się poprzez konwerter USB - RS-232.
+Główna komunikacja odbywa się po pierwszym Serial Porcie. Połączenie między komputerem z oprogramowaniem Matlab, a Esp32 odbywa się poprzez konwerter USB - RS-232.
 
 ### Serial Port 2
 Sterownik zapewnia także możliwość komunikacji poprzez drugi Serial Port. Gniazdo M8 znajduje się obok głównego złącza. Na wyjściu złącza dostępne są cztery piny: 
