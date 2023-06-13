@@ -18,13 +18,24 @@ W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia
 <img align="center" src="images/tens_con.jpg" width="300">
 </p>
  
-| Kolor przewodu | Symbol   | Opis                                 |
-| :------------- | :------- | :------------------------------------|
-| Niebieski      |   GND    |                                      |
-| Czerwony       |   Vcc    |Zasilanie zależne od wyjścia zasilacza|
-| Zielony        |  Tens-In |Wejście napięciowe 0-5V               |
+| Kolor przewodu | Symbol   | Opis                                       |
+| :------------- | :------- | :----------------------------------------- |
+| Niebieski      |   GND    |                                            |
+| Czerwony       |   Vcc    |Zasilanie zależne od wyjścia zasilacza (24V)|
+| Zielony        |  Tens-In |Wejście napięciowe 0-5V                     |
 
 Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. Należy zbudować układ przetwarzający dane z czujnika na napięcie 0-5V. Układ ten nie został zrealizowany przez autorów.
+### Serial Port 1
+Główna komunikacja odbywa się po pierwszym Serial Porcie. Połączenie między komputerem z oprogramowaniem, a Esp32 odbywa się poprzez konwerter USB - RS-232.
+
+### Serial Port 2
+Sterownik zapewnia także możliwość komunikacji poprzez drugi Serial Port. Gniazdo M8 znajduje się obok głównego złącza. Na wyjściu złącza dostępne są cztery piny: 
+| Numer pinu     | Opis                                    |
+| :------------- | :---------------------------------------|
+| 1              | RS-232 Tx                               |
+| 2              | RS-232 Rx-in                            |
+| 3              | GND                                     |
+| 4              | Vcc - napięcie zasilania zasilacza (24V)|
 ## Oprogramowanie
 ### Esp32
 Oprogramowanie dla Esp32 zostało napisane w środowisku Arudino IDE. Źródła znajdują się w folderze [Esp32](/ESP32_src). W celu prawidłowej kompilacji należy w menadżerze płytek wybrać bibliotekę: esp32 by Sspressif Systems w wersji 1.0.6.
@@ -59,5 +70,5 @@ Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
  [l_m_ss, r_m_ss, arm_Pos, arm_Tens, dt, errs] = parser(s);
 ```
 Gdzie `l_m_ss` i `r_m_ss` są odpowiednio wektorami pozycji, prędkości oraz przyspieszenia dla lewego/prawego silnika.  
-`arm_Pos` jest pozycją ramienia urządzenia.
+`arm_Pos` jest pozycją ramienia urządzenia.  
 `arm_Tens` jest wartością z czujnika siły.
