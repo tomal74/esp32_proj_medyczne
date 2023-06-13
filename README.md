@@ -33,7 +33,7 @@ Oprogramowanie dla Esp32 zostało napisane w środowisku Arudino IDE. Źródła 
 Źródła znajdują się w folderze [Matlab](/Matlab).
 
 ## Uruchomienie komunikacji
-Głównym plikiem do komunikacji jest [main.m](your-project-name/tree/master/your-subfolder).  
+Głównym plikiem do komunikacji jest [main.m](/Matlab/main.m).  
 
 W celu uruchomienia komunikacji należy wybrać odpowiedni port dla magistrali RS-232:
 
