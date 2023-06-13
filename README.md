@@ -8,11 +8,11 @@ Projekt zakładał wykonanie układu sterującego silnikami prądu stałego oraz
 ### Enkodery
 Enkodery łączone są pięciopinowym gniazdem z opisem R (enkoder dla prawego silnika) oraz L (enkoder dla lewego silnika). Gniazdo powinno zostać wpięte napisem ku górze platformy (rysunek poniżej).
 
-![Podłączenie enkoderów]  (images/enc_con.png)
+![Podłączenie enkoderów](images/enc_con.png | width=250)
 
 ### Czujnik Siły
 W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia poniżej. 
-![Podłączenie czujnika siły](images/tens_con.jpg)
+![Podłączenie czujnika siły](images/tens_con.jpg | width=250)
 | Kolor przewodu | Symbol   | Opis                                 |
 | :------------- | :------- | :------------------------------------|
 | Niebieski      |   GND    |                                      |
