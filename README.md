@@ -27,10 +27,10 @@ W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia
 Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. Należy zbudować układ przetwarzający dane z czujnika na napięcie 0-5V. Układ ten nie został zrealizowany przez autorów.
 ## Oprogramowanie
 ### Esp32
-Oprogramowanie dla Esp32 zostało napisane w środowisku Arudino IDE. Źródła znajdują się w folderze [Esp32](your-project-name/tree/master/your-subfolder). W celu prawidłowej kompilacji należy w menadżerze płytek wybrać bibliotekę: esp32 by Sspressif Systems w wersji 1.0.6.
+Oprogramowanie dla Esp32 zostało napisane w środowisku Arudino IDE. Źródła znajdują się w folderze [Esp32](esp32_proj_medyczne/ESP32_src). W celu prawidłowej kompilacji należy w menadżerze płytek wybrać bibliotekę: esp32 by Sspressif Systems w wersji 1.0.6.
 
 ### Matlab
-Źródła znajdują się w folderze [Matlab](your-project-name/tree/master/your-subfolder).
+Źródła znajdują się w folderze [Matlab](esp32_proj_medyczne/Matlab).
 
 ## Uruchomienie komunikacji
 Głównym plikiem do komunikacji jest [main.m](your-project-name/tree/master/your-subfolder).  
