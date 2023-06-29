@@ -11,6 +11,9 @@ Projekt zakładał wykonanie układu sterującego silnikami prądu stałego oraz
 ### Enkodery
 Enkodery łączone są pięciopinowym gniazdem z opisem R (enkoder dla prawego silnika) oraz L (enkoder dla lewego silnika). Gniazdo powinno zostać wpięte napisem ku górze platformy (rysunek poniżej).
 
+#### Lewy enkoder uszkodzony!!!
+Wzmacniacz operacyjny na jednym z wyjść enkodera jest uszkodzony. Sygnał jest widoczny na oscyloskopie, ale nie jest wzmacniany.
+
 <p align="center">
 <img src="images/enc_con.png" width="300">
 </p>
