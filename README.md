@@ -4,7 +4,7 @@
 
 Projekt zakładał wykonanie układu sterującego silnikami prądu stałego oraz układu pobierającego dane ze sensorów. Do realizacji założeń projektowych wybrano układ typu SOC - Esp32. Do łatwego implementowania algorytmów sterowania wykorzystano środowisko Matlab, które komunikuje się z Esp32 poprzez magistralę RS-232. 
 ## Autorzy
-- [@tomal74](https://www.github.com/tomal74)
+- [@tomal74](https://www.github.com/tomal74) - wszelkie pytania na tomal74@o2.pl
 - [@Paweu00](https://www.github.com/Paweu00)
 
 ## Najważniejsze połączenia
@@ -78,3 +78,5 @@ Funkcja `parser` pozwala na odebranie odpowiedniej ramki od Esp32.
 Gdzie `l_m_ss` i `r_m_ss` są odpowiednio wektorami pozycji, prędkości oraz przyspieszenia dla lewego/prawego silnika.  
 `arm_Pos` jest pozycją ramienia urządzenia.  
 `arm_Tens` jest wartością z czujnika siły.
+
+Istnieje możliwość udostępnienia schematów PCB na prośbę pod adres tomal74@o2.pl.
