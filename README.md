@@ -27,7 +27,7 @@ W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia
 | Kolor przewodu | Symbol   | Opis                                       |
 | :------------- | :------- | :----------------------------------------- |
 | Niebieski      |   GND    |                                            |
-| Czerwony       |   Vcc    |Zasilanie zależne od wyjścia zasilacza (24V)|
+| Czerwony       |   Vcc    |Zasilanie zależne od zasilacza (24V)|
 | Zielony        |  Tens-In |Wejście analogowe 0-5V                     |
 
 Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. Należy zbudować układ przetwarzający dane z czujnika na napięcie 0-5V. Układ ten nie został zrealizowany przez autorów.
@@ -41,7 +41,7 @@ Sterownik zapewnia także możliwość komunikacji poprzez drugi Serial Port. Se
 | 1              | RS-232 Tx                               |
 | 2              | RS-232 Rx-in                            |
 | 3              | GND                                     |
-| 4              | Vcc - napięcie zasilania zasilacza (24V)|
+| 4              | Vcc - napięcie zasilacza (24V)|
 ## Oprogramowanie
 ### Esp32
 Oprogramowanie dla Esp32 zostało napisane w środowisku Arudino IDE. Źródła znajdują się w folderze [Esp32](/ESP32_src). W celu prawidłowej kompilacji należy w menadżerze płytek wybrać bibliotekę: esp32 by Sspressif Systems w wersji 1.0.6.
