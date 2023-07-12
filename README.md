@@ -35,7 +35,7 @@ Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. 
 Główna komunikacja odbywa się po pierwszym Serial Porcie. Połączenie między komputerem z oprogramowaniem Matlab, a Esp32 odbywa się poprzez konwerter USB - RS-232.
 
 ### Serial Port 2
-Sterownik zapewnia także możliwość komunikacji poprzez drugi Serial Port. Gniazdo M8 znajduje się obok głównego złącza. Na wyjściu złącza dostępne są cztery piny: 
+Sterownik zapewnia także możliwość komunikacji poprzez drugi Serial Port. Serial port 2 jest dodatkowym, "pustym" (nieoprogramowanym) portem do przyszłych zastosowań, sygnały na jego wyjściu mają poziomy zgodne ze standardem RS232. Okrągłe gniazdo M8 znajduje się obok głównego złącza od frontu sterownika. Na wyjściu złącza dostępne są cztery piny: 
 | Numer pinu     | Opis                                    |
 | :------------- | :---------------------------------------|
 | 1              | RS-232 Tx                               |
