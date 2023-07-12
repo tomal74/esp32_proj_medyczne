@@ -27,7 +27,7 @@ W celu podłączenia czujnika siły należy skorzystać z przewodów ze zdjęcia
 | Kolor przewodu | Symbol   | Opis                                       |
 | :------------- | :------- | :----------------------------------------- |
 | Niebieski      |   GND    |                                            |
-| Czerwony       |   Vcc    |Zasilanie zależne od zasilacza (24V)|
+| Czerwony       |   Vcc    |Napięcie zależne od zasilacza (24V)|
 | Zielony        |  Tens-In |Wejście analogowe 0-5V                     |
 
 Czujnika nie można podłączyć bezpośrednio do przewodów opisaych powyżej. Należy zbudować układ przetwarzający dane z czujnika na napięcie 0-5V. Układ ten nie został zrealizowany przez autorów.
